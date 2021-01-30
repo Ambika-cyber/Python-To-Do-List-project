@@ -6,6 +6,7 @@ def line():
     print('---------------------------')
 
 def show_menu():
+    print("\n******* YOUR TO DO LIST *******\n")
     line()
     print('MENU')
     line()
@@ -20,7 +21,7 @@ def show_menu():
 while choice != '4':
     choice = show_menu()
     if choice == '1':
-        item = input('What is to be done? ')
+        item = input("Enter item to add in list:')
         data.append(item)
         print('Item', item, 'added')
     elif choice == '2':
